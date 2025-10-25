@@ -1,7 +1,12 @@
 file result for certain inputs:
 
-      input: 578725 45784683675 5376357 null 54345 4535 null 5 null 738 83737823783 null
-      output: 
+Example 1:
+input: 
+
+      578725 45784683675 5376357 null 54345 4535 null 5 null 738 83737823783 null
+
+output: 
+
       |--578725
             |--45784683675
             |       |__54345
@@ -11,9 +16,14 @@ file result for certain inputs:
                        |--738
                        |__83737823783
 
+Example 2:
 
-      input: 578725 45784683675 5376357 null 54345 4535 null 5 null 738 83737823783 null 578725 45784683675 5376357 null 54345 4535 null 5 null 738 83737823783 null 578725 45784683675 5376357 null 54345 4535 null 5 null 738 83737823783 null
-      output: 
+input: 
+      
+      578725 45784683675 5376357 null 54345 4535 null 5 null 738 83737823783 null 578725 45784683675 5376357 null 54345 4535 null 5 null 738 83737823783 null 578725 45784683675 5376357 null 54345 4535 null 5 null 738 83737823783 null
+      
+output:
+
       |--578725
             |--45784683675
             |       |__54345
@@ -40,9 +50,14 @@ file result for certain inputs:
                                           |__83737823783
 
 
+Example 3:
 
-      input: 1 2 3 4 5 6 7 8 9 4 5 6 1 2 3 7 8 9 4 5 6 1 2 3
-      output: 
+input: 
+
+      1 2 3 4 5 6 7 8 9 4 5 6 1 2 3 7 8 9 4 5 6 1 2 3
+      
+output: 
+      
       |--1
          |--2
          |  |--4
@@ -69,9 +84,14 @@ file result for certain inputs:
                |__3
 
 
+Example 4:
 
-      input: 1 2 3 4 5 null  6 7  null 8 9 null  4 5 6  null 1 null  2 3 null  7 8  null 9 4 5  null 6 1 null  2  null 3
-      output: 
+input: 
+      
+      1 2 3 4 5 null  6 7  null 8 9 null  4 5 6  null 1 null  2 3 null  7 8  null 9 4 5  null 6 1 null  2  null 3
+      
+output: 
+      
       |--1
          |--2
          |  |--4
@@ -98,9 +118,14 @@ file result for certain inputs:
                      |--1
 
 
+Example 5:
 
-      input: 1 2 3 null 5 6 null 8 null 9 10 null
-      output: 
+input: 
+      
+      1 2 3 null 5 6 null 8 null 9 10 null
+      
+output: 
+      
       |--1
          |--2
          |  |__5
