@@ -81,7 +81,7 @@ public class Main {
 
         String buffer = " ".repeat(Math.max(0, letterCount / 2)); // create buffer for spacing for big node data
 
-        // check if we need to add pipe for left child when right child is present (beatification)
+        // check if we need to add pipe for left child when right child is present (for better visual representation)
         boolean addPipe = Boolean.TRUE.equals(left) && Boolean.TRUE.equals(rightPresent);
 
         if(node.getLeft()!=null) {
